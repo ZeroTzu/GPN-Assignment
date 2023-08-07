@@ -19,6 +19,7 @@
   "ResourceOrderSettings": [
     {"name":"sZombie","order":11,"path":"sprites/sZombie/sZombie.yy",},
     {"name":"sGun","order":10,"path":"sprites/sGun/sGun.yy",},
+    {"name":"sClayTiles","order":17,"path":"sprites/sClayTiles/sClayTiles.yy",},
     {"name":"sZombieA","order":13,"path":"sprites/sZombieA/sZombieA.yy",},
     {"name":"sHammer","order":7,"path":"sprites/sHammer/sHammer.yy",},
     {"name":"oEnemy","order":7,"path":"objects/oEnemy/oEnemy.yy",},

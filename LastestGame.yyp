@@ -37,6 +37,7 @@
     {"id":{"name":"sZombie","path":"sprites/sZombie/sZombie.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sGun","path":"sprites/sGun/sGun.yy",},},
+    {"id":{"name":"sClayTiles","path":"sprites/sClayTiles/sClayTiles.yy",},},
     {"id":{"name":"sZombieA","path":"sprites/sZombieA/sZombieA.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sHammer","path":"sprites/sHammer/sHammer.yy",},},
