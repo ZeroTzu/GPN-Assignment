@@ -4,7 +4,7 @@
 
 hsp=4;
 vsp=9;
-grv=0.3;
+grv=0.7;
 wsp=4;
 
 
