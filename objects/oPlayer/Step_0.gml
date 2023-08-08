@@ -18,7 +18,7 @@ if(place_meeting(x,y+1,oWall)) && (key_jump)
 
 if(vsp<0)&&(!key_jump_held) vsp=max(vsp,0);
 
-//Horizontal movement
+//Horizontal collision
 if(place_meeting(x+hsp,y,oWall))
 {
 	while(!place_meeting(x+sign(hsp),y,oWall))
@@ -31,7 +31,7 @@ if(place_meeting(x+hsp,y,oWall))
 }
 x=x+hsp;
 
-//Vertical movement
+//Vertical collision
 if(place_meeting(x,y+vsp,oWall))
 {
 	while(!place_meeting(x,y+sign(vsp),oWall))
