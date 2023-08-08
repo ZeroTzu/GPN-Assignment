@@ -2,6 +2,7 @@ key_left=keyboard_check(ord("A")) || keyboard_check(vk_left);
 key_right=keyboard_check(ord("D"))|| keyboard_check(vk_right);
 key_jump=keyboard_check_pressed(vk_space);
 key_jump_held=keyboard_check(vk_space);
+key_fallThrough_held=keyboard_check(ord("C"));
 //Calculate movement
 var move =key_right-key_left;
 hsp=move*wsp;
@@ -18,55 +19,119 @@ if(place_meeting(x,y+1,oWall)) && (key_jump)
 
 if(vsp<0)&&(!key_jump_held) vsp=max(vsp,0);
 
-//Horizontal collision
-if(place_meeting(x+hsp,y,oWall))
+// Horizontal collision
+var hcollision_obj = instance_place(x + hsp, y, oWall);
+if (hcollision_obj != noone)
 {
-	while(!place_meeting(x+sign(hsp),y,oWall))
-	{
-		
-		x=x+sign(hsp)
-	}
+    while (!place_meeting(x + sign(hsp), y, oWall))
+    {
+        x = x + sign(hsp);
+    }
 
-	hsp=0;
+    
+
+    if (hcollision_obj.canFall==false)
+    {
+		hsp = 0;
+    }
 }
-x=x+hsp;
+x = x + hsp;
 
-//Vertical collision
-if(place_meeting(x,y+vsp,oWall))
+
+// Vertical collision
+var vcollision_obj = instance_place(x, y + vsp, oWall);
+if (vcollision_obj != noone)
 {
-	while(!place_meeting(x,y+sign(vsp),oWall))
-	{
-		
-		y=y+sign(vsp)
-	}
+    while (!place_meeting(x, y + sign(vsp), oWall))
+    {
+        y = y + sign(vsp);
+    }
 
-	vsp=0;
+    // You can perform actions or access properties of the collided object if needed
+    if (vcollision_obj.canFall==false)
+    {
+		vsp=0;
+    }
 }
-y=y+vsp
+y = y + vsp;
 
 
 
 
-//Animation
+
+
+////Animation
+//if(!place_meeting(x,y+1,oWall))
+//{
+//	sprite_index=sPlayerJ;
+//	image_speed=0;
+//	if(sign(vsp)>0){
+//		image_index=1
+//	}else{
+//		image_index=7
+//	}	
+
+	
+//}
+//else
+//{
+
+//	if(hcollision_obj.canFall==true||vcollision_obj==true){
+			
+//		sprite_index=sPlayerJ;
+//		image_speed=0;
+//		if(sign(vsp)>0){
+//			image_index=1
+//		}else{
+//			image_index=7
+//		}	
+			
+//	}else
+	
+
+//		//if on ground
+//		image_speed=1;
+//		if(hsp==0){
+//			//not moving
+//			sprite_index=sPlayer;
+	
+//		}
+//		else{
+//			//is moving
+//			image_speed=2;
+//			sprite_index=sPlayerR;
+//		}
+	
+//}
+
+
+
+//ANimation
 if(!place_meeting(x,y+1,oWall))
 {
+	//if in air 
 	sprite_index=sPlayerJ;
 	image_speed=0;
 	if(sign(vsp)>0){
+		//moving up
 		image_index=1
 	}else{
+		//moving down
 		image_index=7
 	}
 	
 }
 else
 {
+	//if on ground
 	image_speed=1;
 	if(hsp==0){
-	sprite_index=sPlayer;
+		//not moving
+		sprite_index=sPlayer;
 	
 	}
 	else{
+		//is moving
 		image_speed=2;
 		sprite_index=sPlayerR;
 	}

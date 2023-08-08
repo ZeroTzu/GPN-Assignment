@@ -56,6 +56,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
     {"id":{"name":"sZombieD","path":"sprites/sZombieD/sZombieD.yy",},},
+    {"id":{"name":"sWallSmall","path":"sprites/sWallSmall/sWallSmall.yy",},},
     {"id":{"name":"shWhite","path":"shaders/shWhite/shWhite.yy",},},
     {"id":{"name":"sPlayer1Hand","path":"sprites/sPlayer1Hand/sPlayer1Hand.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
@@ -67,6 +68,7 @@
     {"id":{"name":"sTileDirt","path":"sprites/sTileDirt/sTileDirt.yy",},},
     {"id":{"name":"sPlayerJ","path":"sprites/sPlayerJ/sPlayerJ.yy",},},
     {"id":{"name":"oDead","path":"objects/oDead/oDead.yy",},},
+    {"id":{"name":"oWallSmall_FallThrough","path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
   ],
   "RoomOrderNodes": [
