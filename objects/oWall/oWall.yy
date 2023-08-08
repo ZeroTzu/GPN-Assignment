@@ -24,10 +24,10 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
-    "name": "Sprite17",
-    "path": "sprites/Sprite17/Sprite17.yy",
+    "name": "Wall",
+    "path": "sprites/Wall/Wall.yy",
   },
   "spriteMaskId": null,
   "visible": true,
