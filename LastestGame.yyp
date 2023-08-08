@@ -40,12 +40,15 @@
     {"id":{"name":"sClayTiles","path":"sprites/sClayTiles/sClayTiles.yy",},},
     {"id":{"name":"sZombieA","path":"sprites/sZombieA/sZombieA.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"id":{"name":"residentialTiles","path":"tilesets/residentialTiles/residentialTiles.yy",},},
     {"id":{"name":"sHammer","path":"sprites/sHammer/sHammer.yy",},},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"sZombieR","path":"sprites/sZombieR/sZombieR.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"oPlayerSquare","path":"objects/oPlayerSquare/oPlayerSquare.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"sResidentialFinal","path":"sprites/sResidentialFinal/sResidentialFinal.yy",},},
     {"id":{"name":"sResidential","path":"sprites/sResidential/sResidential.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
@@ -67,6 +70,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
