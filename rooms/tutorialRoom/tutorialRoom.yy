@@ -1,7 +1,7 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "Room3",
+  "name": "tutorialRoom",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
