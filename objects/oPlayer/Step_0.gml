@@ -13,7 +13,7 @@ vsp=vsp+grv;
 //Jump
 if(place_meeting(x,y+1,oWall)) && (key_jump)
 {
-	vsp=-10;
+	vsp=-15;
 }
 
 if(vsp<0)&&(!key_jump_held) vsp=max(vsp,0);
