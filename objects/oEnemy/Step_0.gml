@@ -32,14 +32,27 @@ else
 	}
 }
 
-if(_num==0){
-	hsp=4
-	
-}
-else if(ds_list_find_index(inSight,0)==oPlayer.id)
+if(_num<=0)
 {
-		hsp=9;
+	show_debug_message("less than= 0"+string(_num));
+	hsp=4
 }
+else
+{
+	//show_debug_message("more than 0"+string(_num));
+	show_debug_message(string(ds_list_find_value(inSight,0))+" is "+string(oPlayer.id))
+	
+	
+	if(ds_list_find_value(inSight, 0) == oPlayer.id)
+	{
+		show_debug_message("running")
+		hsp=currentDirection*9;
+	}
+	else{
+		hsp=currentDirection*4;
+	}
+}
+
 
 
 //if(ds_list_empty(inSight)==false)
@@ -128,11 +141,6 @@ else
 		image_speed=1;
 		sprite_index=sZombieR;
 	}
-		
-
-	
-	
-
 }
 if (hsp!=0) image_xscale=sign(hsp);
 

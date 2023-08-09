@@ -7,7 +7,7 @@ hp=4;
 flash=0;
 
 hitfrom=0;
-canMove=false;
+canMove=true;
 
 currentDirection=-1;
 
