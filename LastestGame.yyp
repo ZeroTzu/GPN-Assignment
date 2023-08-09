@@ -72,6 +72,7 @@
     {"id":{"name":"oDead","path":"objects/oDead/oDead.yy",},},
     {"id":{"name":"oLevelEnd","path":"objects/oLevelEnd/oLevelEnd.yy",},},
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
+    {"id":{"name":"background1","path":"sprites/background1/background1.yy",},},
     {"id":{"name":"oWallSmall_FallThrough","path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
   ],

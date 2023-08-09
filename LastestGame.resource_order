@@ -49,6 +49,7 @@
     {"name":"oDead","order":8,"path":"objects/oDead/oDead.yy",},
     {"name":"oLevelEnd","order":12,"path":"objects/oLevelEnd/oLevelEnd.yy",},
     {"name":"oTransition","order":11,"path":"objects/oTransition/oTransition.yy",},
+    {"name":"background1","order":21,"path":"sprites/background1/background1.yy",},
     {"name":"oWallSmall_FallThrough","order":10,"path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
   ],
