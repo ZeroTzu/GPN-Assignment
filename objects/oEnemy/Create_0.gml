@@ -2,9 +2,13 @@ vsp=9;
 
 grv=0.3;
 walksp=4;
+runsp=10;
 hsp=walksp;
 hp=4;
 flash=0;
+
+aggroDura=60;
+currentState="walking"
 
 hitfrom=0;
 canMove=true;

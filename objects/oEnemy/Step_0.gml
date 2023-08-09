@@ -19,14 +19,14 @@ currentDirection=sign(hsp);
 var __num=0;
 if(currentDirection>0)
 {
-	_num=collision_line_list(x,y,x+sightRange_x,y,bActor,false,true,inSight,true);
+	_num=collision_line_list(x,y-40,x+sightRange_x,y-40,bActor,false,true,inSight,true);
 	if (_num>0){
 		point_x=(ds_list_find_value(inSight,0).x-x)<sightRange_x?(ds_list_find_value(inSight,0).x-x):sightRange_x;
 	}
 }
 else
 {
-	_num=collision_line_list(x,y,x-sightRange_x,y,bActor,false,true,inSight,true);
+	_num=collision_line_list(x,y-40,x-sightRange_x,y-40,bActor,false,true,inSight,true);
 	if (_num>0){
 		point_x=(ds_list_find_value(inSight,0).x-x)<sightRange_x?(ds_list_find_value(inSight,0).x-x):sightRange_x;
 	}
@@ -35,7 +35,7 @@ else
 if(_num<=0)
 {
 	show_debug_message("less than= 0"+string(_num));
-	hsp=4
+	hsp=4;
 }
 else
 {
@@ -45,11 +45,22 @@ else
 	
 	if(ds_list_find_value(inSight, 0) == oPlayer.id)
 	{
+		currentState="running"
 		show_debug_message("running")
-		hsp=currentDirection*9;
+		hsp=currentDirection*runsp;
 	}
-	else{
-		hsp=currentDirection*4;
+	else if(currentState=="running"){
+		aggroDura=max(0,aggroDura-1)
+		
+		if(aggroDura==0)
+		{
+			currentState="walking"
+			aggroDura=60;
+		}
+	}
+	else
+	{
+		hsp=currentDirection*walksp
 	}
 }
 

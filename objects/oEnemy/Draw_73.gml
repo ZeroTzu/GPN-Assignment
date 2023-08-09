@@ -13,11 +13,11 @@
 
 if(sign(hsp)>0){
 	
-	draw_line_color(x,y,x+sightRange_x,y,c_teal,c_black)
+	draw_line_color(x,y-40,x+sightRange_x,y-40,c_teal,c_black)
 }
 else
 {
-	draw_line_color(x-sightRange_x,y,x,y,c_teal,c_teal)
+	draw_line_color(x-sightRange_x,y-40,x,y-40,c_teal,c_teal)
 }
 
 
