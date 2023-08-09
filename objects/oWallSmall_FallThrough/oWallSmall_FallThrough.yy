@@ -35,5 +35,5 @@
     "path": "sprites/sWallSmall/sWallSmall.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
