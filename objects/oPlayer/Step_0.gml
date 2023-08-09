@@ -11,32 +11,42 @@ hsp=move*wsp;
 //Gravity
 vsp=vsp+grv;
 
-//Jump
-if(place_meeting(x,y+1,oWall)) && (key_jump)
-{
-	vsp=-15;
-}
 
-if(vsp<0)&&(!key_jump_held) vsp=max(vsp,0);
 
-// Horizontal collision
-var hcollision_obj = instance_place(x + hsp, y, oWall);
-if (hcollision_obj != noone)
+if(hascontrol)
 {
-    while (!place_meeting(x + sign(hsp), y, oWall))
-    {
-        x = x + sign(hsp);
-    }
+	//Jump
+	if(place_meeting(x,y+1,oWall)) && (key_jump)
+	{
+		vsp=-15;
+	}
+
+	if(vsp<0)&&(!key_jump_held) vsp=max(vsp,0);
+
+	// Horizontal collision
+	var hcollision_obj = instance_place(x + hsp, y, oWall);
+	if (hcollision_obj != noone)
+	{
+	    while (!place_meeting(x + sign(hsp), y, oWall))
+	    {
+	        x = x + sign(hsp);
+	    }
 
     
 
-    if (hcollision_obj.canFall==false)
-    {
-		hsp = 0;
-    }
+	    if (hcollision_obj.canFall==false)
+	    {
+			hsp = 0;
+	    }
+	}
+	x = x + hsp;
 }
-x = x + hsp;
-
+else{
+	key_right=0;
+	key_left=0;
+	keyjump=0;
+	
+}
 
 // Vertical collision
 var vcollision_obj = instance_place(x, y + vsp, oWall);
