@@ -8,5 +8,3 @@ if(flash>0)
 	shader_reset();
 }
 
-
-

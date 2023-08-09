@@ -8,8 +8,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"propertyId":{"name":"canFall","path":"objects/oWall/oWall.yy",},"value":"True",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Walls",
+    "path": "folders/Objects/Walls.yy",
   },
   "parentObjectId": {
     "name": "oWall",
