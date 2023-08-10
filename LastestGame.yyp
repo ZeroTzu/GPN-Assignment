@@ -41,7 +41,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.6.0.89",
   },
   "resources": [
     {"id":{"name":"sZombie","path":"sprites/sZombie/sZombie.yy",},},
@@ -113,11 +113,11 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
+    {"roomId":{"name":"L3_pharmacyStreetRoom","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},},
     {"roomId":{"name":"L1_tutorialRoom","path":"rooms/L1_tutorialRoom/L1_tutorialRoom.yy",},},
     {"roomId":{"name":"L2_streetRoom","path":"rooms/L2_streetRoom/L2_streetRoom.yy",},},
-    {"roomId":{"name":"L3_pharmacyStreetRoom","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},},
     {"roomId":{"name":"L4_pharmacyRoom","path":"rooms/L4_pharmacyRoom/L4_pharmacyRoom.yy",},},
+    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
