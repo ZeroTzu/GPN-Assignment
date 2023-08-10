@@ -70,7 +70,6 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"sPharmacyStreet","path":"sprites/sPharmacyStreet/sPharmacyStreet.yy",},},
     {"id":{"name":"chairTableProps","path":"sprites/chairTableProps/chairTableProps.yy",},},
-    {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
     {"id":{"name":"oShotGun","path":"objects/oShotGun/oShotGun.yy",},},
     {"id":{"name":"SnShotGunShoot","path":"sounds/SnShotGunShoot/SnShotGunShoot.yy",},},
     {"id":{"name":"sZombieD","path":"sprites/sZombieD/sZombieD.yy",},},
