@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "car",
-  "bbox_bottom": 127,
-  "bbox_left": 256,
-  "bbox_right": 511,
+  "name": "wordTile",
+  "bbox_bottom": 7,
+  "bbox_left": 0,
+  "bbox_right": 7,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da7f2fc1-6541-4616-93d5-0d21fa1e542e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5e6dacf6-5842-4748-b7a3-bd931bc1d784",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1024,
+  "height": 8,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8e63ea7c-4dc6-4b37-a647-30f964320807","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a4c87d12-7c92-494c-8029-4fae57de48ef","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "car",
+    "name": "wordTile",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da7f2fc1-6541-4616-93d5-0d21fa1e542e","path":"sprites/car/car.yy",},},},"Disabled":false,"id":"b344c7ae-48db-4587-88e9-1f9d40383f96","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5e6dacf6-5842-4748-b7a3-bd931bc1d784","path":"sprites/wordTile/wordTile.yy",},},},"Disabled":false,"id":"844ec5a4-901a-46b3-b2f0-30e4001d466e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1024,
+  "width": 8,
 }
