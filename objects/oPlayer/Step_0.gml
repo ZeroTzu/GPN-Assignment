@@ -57,7 +57,7 @@ if (vcollision_obj != noone)
         y = y + sign(vsp);
     }
 
-    // You can perform actions or access properties of the collided object if needed
+   
     if (vcollision_obj.canFall==false)
     {
 		vsp=0;
