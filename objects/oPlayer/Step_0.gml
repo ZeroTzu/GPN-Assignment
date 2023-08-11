@@ -3,6 +3,8 @@ key_right=keyboard_check(ord("D"))|| keyboard_check(vk_right);
 key_jump=keyboard_check_pressed(vk_space);
 key_jump_held=keyboard_check(vk_space);
 key_fallThrough_held=keyboard_check(ord("C"));
+key_pickdrop=keyboard_check_pressed(ord("E"));
+
 if (keyboard_check_pressed(vk_enter)) { show_debug_message(instance_count); }
 //Calculate movement
 var move =key_right-key_left;
@@ -67,57 +69,31 @@ if (vcollision_obj != noone)
 y = y + vsp;
 
 
-
-
-
-
-////Animation
-//if(!place_meeting(x,y+1,oWall))
-//{
-//	sprite_index=sPlayerJ;
-//	image_speed=0;
-//	if(sign(vsp)>0){
-//		image_index=1
-//	}else{
-//		image_index=7
-//	}	
-
+//Pick up/drop weapons
+if(key_pickup)
+{
+	var pickupList=ds_list_create();
+	var pickupCount=collision_circle_list(x,y,pickupRadius,oItem,false,true,pickupList,true)
 	
-//}
-//else
-//{
-
-//	if(hcollision_obj.canFall==true||vcollision_obj==true){
+	if (pickupCount>0)
+	{
+		if(holding==noone)
+		{
+			holding = pickupList[| 0];
+			holding.isBeingCarried=true;
 			
-//		sprite_index=sPlayerJ;
-//		image_speed=0;
-//		if(sign(vsp)>0){
-//			image_index=1
-//		}else{
-//			image_index=7
-//		}	
-			
-//	}else
+		}
+		
+	}
 	
-
-//		//if on ground
-//		image_speed=1;
-//		if(hsp==0){
-//			//not moving
-//			sprite_index=sPlayer;
 	
-//		}
-//		else{
-//			//is moving
-//			image_speed=2;
-//			sprite_index=sPlayerR;
-//		}
+	ds_list_destroy(pickupList)
 	
-//}
+	
+}
 
 
-
-//ANimation
+//Animation
 if(!place_meeting(x,y+1,oWall))
 {
 	//if in air 
