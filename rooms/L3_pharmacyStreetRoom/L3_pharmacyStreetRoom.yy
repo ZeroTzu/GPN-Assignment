@@ -329,6 +329,9 @@
     {"name":"inst_445D9086","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
     {"name":"inst_26C624EE","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
     {"name":"inst_33E1DFE2","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
+    {"name":"inst_6AB85CFA","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
+    {"name":"inst_3DC7BA8C","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
+    {"name":"inst_4E77E1E4","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
   ],
   "isDnd": false,
   "layers": [
