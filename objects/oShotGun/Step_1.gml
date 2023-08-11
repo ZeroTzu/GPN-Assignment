@@ -23,7 +23,7 @@
 			
 			
 			bullet1collisionlist=ds_list_create();
-			bullet1collisions=collision_line_list(x,y,x+lengthdir_x(range,image_angle),y+lengthdir_y(range,image_angle),oWall,false,true,bullet1collisionlist,true);
+			bullet1collisions=collision_line_list(x,y,x+lengthdir_x(range,image_angle),y+lengthdir_y(range,image_angle),bActor,false,true,bullet1collisionlist,true);
 			with(instance_create_layer(x,y,"Bullets",oBullet))
 			{
 				speed=other.projectileSpeed;
@@ -54,34 +54,30 @@
 			
 			
 			//collision 1
-			if(bullet1collisions>0)
+			if(bullet1collisions>0 )
 			{
-				show_debug_message(string(bullet1collisions))
 				currentPierce=pierce;
 				for(var i=0;i<bullet1collisions;i++)
 				{
 					
+					show_debug_message(string(object_get_parent(ds_list_find_value(bullet1collisionlist, i).object_index))+ " hihi " +string(bEnemy))
 					if ( ds_list_find_value(bullet1collisionlist,i).object_index == oWall)
 					{
 						show_debug_message("wall detected");	
 						break;
 					}
-					else 
-						if ( ds_list_find_value(bullet1collisionlist,i).object_index == bEnemy) 
+
+					if (object_get_parent(ds_list_find_value(bullet1collisionlist, i).object_index) == bEnemy) 
+					{
+						show_debug_message("enemy detected");
+						with(ds_list_find_value(bullet1collisionlist,i))	
 						{
-							show_debug_message("enemy detected");
-							with(ds_list_find_value(bullet1collisionlist,i))	
-							{
-								if(dead!=true)
-								{
-									show_debug_message("im funny, please ");
-								hp--;
-								flash=3;
-								hitfrom=other.direction;
-								}
-							}
+							hp--;
+							flash=3;
+							hitfrom=other.direction;
 						}
-						
+					}
+					else show_debug_message("something was detected");
 					currentPierce--;
 					if(currentPierce<=0)
 					{
@@ -89,72 +85,78 @@
 						break;
 					}
 				}
-				
+				show_debug_message("finished loop")
 			}
-			
-			//collision 2
-			if(bullet2collisions>0)
+
+						//collision 1
+			if(bullet2collisions>0 )
 			{
 				currentPierce=pierce;
 				for(var i=0;i<bullet2collisions;i++)
 				{
+					
+					show_debug_message(string(object_get_parent(ds_list_find_value(bullet2collisionlist, i).object_index))+ " hihi " +string(bEnemy))
 					if ( ds_list_find_value(bullet2collisionlist,i).object_index == oWall)
 					{
+						show_debug_message("wall detected");	
 						break;
 					}
-					if ( ds_list_find_value(bullet2collisionlist,i.object_index) == bEnemy) 
+
+					if (object_get_parent(ds_list_find_value(bullet2collisionlist, i).object_index) == bEnemy) 
 					{
+						show_debug_message("enemy detected");
 						with(ds_list_find_value(bullet2collisionlist,i))	
 						{
-							if(dead!=true)
-							{
 							hp--;
 							flash=3;
 							hitfrom=other.direction;
-							}
 						}
-					}	
+					}
+					else show_debug_message("something was detected");
 					currentPierce--;
 					if(currentPierce<=0)
 					{
+						show_debug_message("broke")
 						break;
 					}
 				}
-				
+				show_debug_message("finished loop")
 			}
 			//collision 3
-			if(bullet3collisions>0)
+			if(bullet1collisions>0 )
 			{
-				show_debug_message("1 is more than 1")
 				currentPierce=pierce;
 				for(var i=0;i<bullet3collisions;i++)
 				{
-
+					
+					show_debug_message(string(object_get_parent(ds_list_find_value(bullet3collisionlist, i).object_index))+ " hihi " +string(bEnemy))
 					if ( ds_list_find_value(bullet3collisionlist,i).object_index == oWall)
 					{
-						show_debug_message(string(i)+"is wall");	
+						show_debug_message("wall detected");	
 						break;
 					}
-					if ( ds_list_find_value(bullet3collisionlist,i).object_index ==bEnemy) 
+
+					if (object_get_parent(ds_list_find_value(bullet3collisionlist, i).object_index) == bEnemy) 
 					{
+						show_debug_message("enemy detected");
 						with(ds_list_find_value(bullet3collisionlist,i))	
 						{
-							if(dead!=true)
-							{
 							hp--;
 							flash=3;
 							hitfrom=other.direction;
-							}
 						}
-					}	
+					}
+					else show_debug_message("something was detected");
 					currentPierce--;
 					if(currentPierce<=0)
 					{
+						show_debug_message("broke")
 						break;
 					}
 				}
-				
+				show_debug_message("finished loop")
 			}
+
 			ds_list_destroy(bullet1collisionlist)
 			ds_list_destroy(bullet2collisionlist)
 			ds_list_destroy(bullet3collisionlist)

@@ -101,7 +101,6 @@
     {"id":{"name":"sWallSmall","path":"sprites/sWallSmall/sWallSmall.yy",},},
     {"id":{"name":"medicineTile","path":"tilesets/medicineTile/medicineTile.yy",},},
     {"id":{"name":"shWhite","path":"shaders/shWhite/shWhite.yy",},},
-    {"id":{"name":"oTest","path":"objects/oTest/oTest.yy",},},
     {"id":{"name":"sPlayer1Hand","path":"sprites/sPlayer1Hand/sPlayer1Hand.yy",},},
     {"id":{"name":"shelfTile","path":"tilesets/shelfTile/shelfTile.yy",},},
     {"id":{"name":"ladder","path":"sprites/ladder/ladder.yy",},},
@@ -133,8 +132,8 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
-    {"roomId":{"name":"L3_pharmacyStreetRoom","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},},
     {"roomId":{"name":"L1_tutorialRoom","path":"rooms/L1_tutorialRoom/L1_tutorialRoom.yy",},},
+    {"roomId":{"name":"L3_pharmacyStreetRoom","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},},
     {"roomId":{"name":"L2_streetRoom","path":"rooms/L2_streetRoom/L2_streetRoom.yy",},},
     {"roomId":{"name":"L4_pharmacyRoom","path":"rooms/L4_pharmacyRoom/L4_pharmacyRoom.yy",},},
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
