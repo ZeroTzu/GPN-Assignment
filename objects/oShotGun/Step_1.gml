@@ -15,29 +15,152 @@
 			recoil=4;
 
 			ammo-=1;
+
+			
 			audio_play_sound(SnShotGunShoot,5,false);
 			ScreenShake(2,20);
+			
+			
+			
+			bullet1collisionlist=ds_list_create();
+			bullet1collisions=collision_line_list(x,y,x+lengthdir_x(range,image_angle),y+lengthdir_y(range,image_angle),bActor,false,true,bullet1collisionlist,true);
 			with(instance_create_layer(x,y,"Bullets",oBullet))
 			{
-				speed=50;
+				speed=other.projectileSpeed;
 				direction=other.image_angle
 				image_angle=direction;
-
 			}
+						
+			bullet2varyangle= random_range(1,10);
+			bullet2collisionlist=ds_list_create();
+			bullet2collisions=collision_line_list(x,y,x+lengthdir_x(range,image_angle+bullet2varyangle),y+lengthdir_y(range,image_angle+bullet2varyangle),bActor,false,true,bullet2collisionlist,true);
 			with(instance_create_layer(x,y,"Bullets",oBullet))
 			{
-				speed=50;
-				direction=other.image_angle+random_range(1,10)
+				speed=other.projectileSpeed;
+				direction=other.image_angle+other.bullet2varyangle;
 				image_angle=direction;
 
 			}
-				with(instance_create_layer(x,y,"Bullets",oBullet))
+			bullet3varyangle=random_range(1,10);
+			bullet3collisionlist=ds_list_create();
+			bullet3collisions=collision_line_list(x,y,x+lengthdir_x(range,image_angle-bullet3varyangle),y+lengthdir_y(range,image_angle-bullet3varyangle),bActor,false,true,bullet3collisionlist,true)
+			with(instance_create_layer(x,y,"Bullets",oBullet))
 			{
-				speed=50;
-				direction=other.image_angle-random_range(1,10)
+				speed=other.projectileSpeed;
+				direction=other.image_angle-other.bullet3varyangle;
 				image_angle=direction;
 
+			} 
+			
+			
+			//collision 1
+			if(bullet1collisions>0)
+			{
+				show_debug_message("1 is more than 1")
+				currentPierce=pierce;
+				for(var i=0;i<bullet1collisions;i++)
+				{
+					
+					//show_debug_message(string(ds_list_find_value(bullet1collisionlist, i)));	
+					//show_debug_message(string(oWall.id));
+					
+					if ( ds_list_find_value(bullet1collisionlist,i) == oWall.id)
+					{
+						show_debug_message("wall detected");	
+						break;
+					}
+					
+					if ( ds_list_find_value(bullet1collisionlist,i) == bEnemy.id) 
+					{
+						show_debug_message("enemy detected");
+						with(ds_list_find_value(bullet1collisionlist,i))	
+						{
+							if(dead!=true)
+							{
+								show_debug_message("im funny, please ");
+							hp--;
+							flash=3;
+							hitfrom=other.direction;
+							}
+						}
+					}	
+					currentPierce--;
+					if(currentPierce<=0)
+					{
+						show_debug_message("broke")
+						break;
+					}
+				}
+				
 			}
+			
+			////collision 2
+			//if(bullet2collisions>0)
+			//{
+			//	currentPierce=pierce;
+			//	for(var i=0;i<bullet2collisions;i++)
+			//	{
+			//		if ( ds_list_find_value(bullet2collisionlist,i) == oWall.id)
+			//		{
+			//			break;
+			//		}
+			//		if ( ds_list_find_value(bullet2collisionlist,i) == bEnemy.id) 
+			//		{
+			//			with(ds_list_find_value(bullet2collisionlist,i))	
+			//			{
+			//				if(dead!=true)
+			//				{
+			//				hp--;
+			//				flash=3;
+			//				hitfrom=other.direction;
+			//				}
+			//			}
+			//		}	
+			//		currentPierce--;
+			//		if(currentPierce<=0)
+			//		{
+			//			break;
+			//		}
+			//	}
+				
+			//}
+			////collision 3
+			//if(bullet3collisions>0)
+			//{
+			//	show_debug_message("1 is more than 1")
+			//	currentPierce=pierce;
+			//	for(var i=0;i<bullet3collisions;i++)
+			//	{
+
+			//		if ( ds_list_find_value(bullet3collisionlist,i) == oWall.id)
+			//		{
+			//			show_debug_message(string(i)+"is wall");	
+			//			break;
+			//		}
+			//		if ( ds_list_find_value(bullet3collisionlist,i) ==bEnemy.id) 
+			//		{
+			//			with(ds_list_find_value(bullet3collisionlist,i))	
+			//			{
+			//				if(dead!=true)
+			//				{
+			//				hp--;
+			//				flash=3;
+			//				hitfrom=other.direction;
+			//				}
+			//			}
+			//		}	
+			//		currentPierce--;
+			//		if(currentPierce<=0)
+			//		{
+			//			break;
+			//		}
+			//	}
+				
+			//}
+			ds_list_destroy(bullet1collisionlist)
+			ds_list_destroy(bullet2collisionlist)
+			ds_list_destroy(bullet3collisionlist)
+			
 		}
 		else
 		{

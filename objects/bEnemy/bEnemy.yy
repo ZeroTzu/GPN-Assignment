@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWallSmall_FallThrough",
+  "name": "bEnemy",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"propertyId":{"name":"canFall","path":"objects/oWall/oWall.yy",},"value":"True",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "Walls",
-    "path": "folders/Objects/Walls.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
   "parentObjectId": {
-    "name": "oWall",
-    "path": "objects/oWall/oWall.yy",
+    "name": "bActor",
+    "path": "objects/bActor/bActor.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sWallSmall",
-    "path": "sprites/sWallSmall/sWallSmall.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

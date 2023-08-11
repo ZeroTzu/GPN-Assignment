@@ -11,13 +11,13 @@ aggroDura=60;
 currentState="walking"
 
 hitfrom=0;
-canMove=true;
+canMove=false;
 
 currentDirection=-1;
 
-
+dead=false
 
 //line of sight
 sightRange_x=64*10
 point_x=0;
-inSight=ds_list_create()
+inSight=0;

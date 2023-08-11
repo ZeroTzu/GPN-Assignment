@@ -3,6 +3,7 @@ key_right=keyboard_check(ord("D"))|| keyboard_check(vk_right);
 key_jump=keyboard_check_pressed(vk_space);
 key_jump_held=keyboard_check(vk_space);
 key_fallThrough_held=keyboard_check(ord("C"));
+if (keyboard_check_pressed(vk_enter)) { show_debug_message(instance_count); }
 //Calculate movement
 var move =key_right-key_left;
 hsp=move*wsp;

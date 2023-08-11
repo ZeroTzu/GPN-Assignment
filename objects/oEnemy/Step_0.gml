@@ -10,11 +10,8 @@ if(canMove==false)
 {
 	hsp=0;
 }
+inSight=ds_list_create();
 
-
-
-//Line of sight code
-ds_list_clear(inSight)
 currentDirection=sign(hsp);
 var __num=0;
 if(currentDirection>0)
@@ -34,19 +31,17 @@ else
 
 if(_num<=0)
 {
-	show_debug_message("less than= 0"+string(_num));
 	hsp=4;
 }
 else
 {
 	//show_debug_message("more than 0"+string(_num));
-	show_debug_message(string(ds_list_find_value(inSight,0))+" is "+string(oPlayer.id))
+	//show_debug_message(string(ds_list_find_value(inSight,0))+" is "+string(oPlayer.id))
 	
 	
 	if(ds_list_find_value(inSight, 0) == oPlayer.id)
 	{
 		currentState="running"
-		show_debug_message("running")
 		hsp=currentDirection*runsp;
 	}
 	else if(currentState=="running"){
@@ -63,6 +58,12 @@ else
 		hsp=currentDirection*walksp
 	}
 }
+
+ds_list_destroy(inSight)
+
+
+
+
 
 
 

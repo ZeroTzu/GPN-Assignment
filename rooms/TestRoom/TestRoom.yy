@@ -9,8 +9,6 @@
   "instanceCreationOrder": [
     {"name":"inst_7839E7C5","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_1BEBA5A","path":"rooms/TestRoom/TestRoom.yy",},
-    {"name":"inst_5065BE17","path":"rooms/TestRoom/TestRoom.yy",},
-    {"name":"inst_1ACCC087","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_3D36FE9B","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_4DEDC288","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_791F6C55","path":"rooms/TestRoom/TestRoom.yy",},
@@ -58,13 +56,13 @@
     {"name":"inst_182D0C1E","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_32B755DC","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_25252D38","path":"rooms/TestRoom/TestRoom.yy",},
+    {"name":"inst_40C99B4C","path":"rooms/TestRoom/TestRoom.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemy","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5065BE17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":1792.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1ACCC087","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":1792.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D36FE9B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":1792.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40C99B4C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":1760.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Bullets","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

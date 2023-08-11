@@ -7,6 +7,6 @@
 //grv=0.7;
 //wsp=7;
 
-
+show_debug_overlay(true);
 
 
