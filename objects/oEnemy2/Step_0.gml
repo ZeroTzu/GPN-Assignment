@@ -1,11 +1,34 @@
 
+//calculate when to look left/right, on idle
+if (actioncdCurrent!=0 && hspCurrent==0)
+{
+	actioncdCurrent--;
+}
+else if (actioncdCurrent==0 && hspCurrent==0)
+{
+	show_debug_message("changed direction");
+	currentDirection=-currentDirection
+	actioncdCurrent=actioncd
+}
 
+if( isAggroing==false)
+{
+	hspCurrent=0;	
+	
+}
+
+
+
+
+
+#region Line of sight and targeting
+//line of sight code
 inSight=ds_list_create();
 
-currentDirection=sign(hsp);
 var __num=0;
 if(currentDirection>0)
 {
+	show_debug_message("facing the right"+string(currentDirection))
 	_num=collision_line_list(x,y-40,x+sightRange_x,y-40,bActor,false,true,inSight,true);
 	if (_num>0){
 		point_x=(ds_list_find_value(inSight,0).x-x)<sightRange_x?(ds_list_find_value(inSight,0).x-x):sightRange_x;
@@ -13,30 +36,24 @@ if(currentDirection>0)
 }
 else
 {
+	show_debug_message("facing the left"+string(currentDirection))
 	_num=collision_line_list(x,y-40,x-sightRange_x,y-40,bActor,false,true,inSight,true);
 	if (_num>0){
 		point_x=(ds_list_find_value(inSight,0).x-x)<sightRange_x?(ds_list_find_value(inSight,0).x-x):sightRange_x;
 	}
 }
 
-if(_num<=0)
+if(__num>0)
 {
-	hsp=4;
-}
-else
-{
-	//show_debug_message("more than 0"+string(_num));
-	//show_debug_message(string(ds_list_find_value(inSight,0))+" is "+string(oPlayer.id))
-	
-	
-	if(ds_list_find_value(inSight, 0) == oPlayer.id)
+	show_debug_message(string(_num))
+	if(ds_list_find_value(inSight, 0).object_index == oPlayer)
 	{
 		currentState="running"
-		hsp=currentDirection*runsp;
+		hspCurrent=currentDirection*runsp;
 	}
 	else if(currentState=="running"){
 		aggroDura=max(0,aggroDura-1)
-		
+		show_debug_message("found player, running")
 		if(aggroDura==0)
 		{
 			currentState="walking"
@@ -45,12 +62,13 @@ else
 	}
 	else
 	{
-		hsp=currentDirection*0
+		hspCurrent=0
 	}
 }
 
 ds_list_destroy(inSight)
 
+#endregion
 
 
 
@@ -59,20 +77,21 @@ ds_list_destroy(inSight)
 
 
 
-
+#region horizontal and vertical collision and movement
 //Horizontal collision
-if(place_meeting(x+hsp,y,oWall))
+if(place_meeting(x+hspCurrent,y,oWall))
 {
 	//if this enemy is moving horizontally, and is about to hit a wall,
-	while(!place_meeting(x+sign(hsp),y,oWall))
+	while(!place_meeting(x+sign(hspCurrent),y,oWall))
 	{
-				//while it does not hit the wall change its hsp until it does
-		x=x+sign(hsp)
+	//while it does not hit the wall change its hsp until it does
+		x=x+sign(hspCurrent)
 	}
 
-	hsp=-hsp;
+	hspCurrent=-hspCurrent;
+	currentDirection=sign(hspCurrent)
 }
-x=x+hsp;
+x=x+hspCurrent;
 
 //Vertical collision
 if(place_meeting(x,y+vsp,oWall))
@@ -87,9 +106,13 @@ if(place_meeting(x,y+vsp,oWall))
 	vsp=0;
 }
 y=y+vsp
+#endregion
 
 
 
+
+
+#region animation for mid air/ on the ground, left right movement
 //Animation
 if(!place_meeting(x,y+1,oWall))
 {// if this enemy is not on the ground,
@@ -107,7 +130,7 @@ if(!place_meeting(x,y+1,oWall))
 else
 {
 	image_speed=1;
-	if(hsp==0)
+	if(hspCurrent==0)
 	{
 		sprite_index=sZombie2;
 	}
@@ -117,11 +140,13 @@ else
 		sprite_index=sZombie2R;
 	}
 }
-if (hsp!=0) image_xscale=sign(hsp);
+if (hsp!=0) image_xscale=currentDirection;
+
+#endregion
 
 
 
-
+//cool down attack
 if(attackcdCurrent!=0)
 {
 	attackcdCurrent--;	
