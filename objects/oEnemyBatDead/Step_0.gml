@@ -29,7 +29,7 @@ if( done==0){
 		if(vsp>0) 
 		{
 			done=1;
-			image_index=3;
+			image_index=5;
 		}
 		while(!place_meeting(x,y+sign(vsp),oWall))
 		{

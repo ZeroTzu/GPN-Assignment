@@ -6,6 +6,7 @@ key_fallThrough_held=keyboard_check(ord("C"));
 key_pick=keyboard_check_pressed(ord("E"));
 key_drop=keyboard_check_pressed(ord("F"));
 
+
 if (keyboard_check_pressed(vk_enter)) { show_debug_message(instance_count); }
 //Calculate movement
 var move =key_right-key_left;
@@ -131,38 +132,41 @@ if(key_drop){
 	
 }
 
-//Animation
-if(!place_meeting(x,y+1,oWall))
-{
-	//if in air 
-	sprite_index=sPlayerJ;
-	image_speed=0;
-	if(sign(vsp)>0){
-		//moving up
-		image_index=1
-	}else{
-		//moving down
-		image_index=7
-	}
-	
-}
-else
-{
-	//if on ground
-	image_speed=1;
-	if(hsp==0){
-		//not moving
-		sprite_index=sPlayer;
-	
-	}
-	else{
-		//is moving
-		image_speed=2;
-		sprite_index=sPlayerR;
-	}
-	
-}
-if (hsp!=0) image_xscale=sign(hsp);
 
+//Animation
+if(hascontrol)
+	{
+	if(!place_meeting(x,y+1,oWall))
+	{
+		//if in air 
+		sprite_index=sPlayerJ;
+		image_speed=0;
+		if(sign(vsp)>0){
+			//moving up
+			image_index=1
+		}else{
+			//moving down
+			image_index=7
+		}
+	
+	}
+	else
+	{
+		//if on ground
+		image_speed=1;
+		if(hsp==0){
+			//not moving
+			sprite_index=sPlayer;
+	
+		}
+		else{
+			//is moving
+			image_speed=2;
+			sprite_index=sPlayerR;
+		}
+	
+	}
+	if (hsp!=0) image_xscale=sign(hsp);
+}
 
 

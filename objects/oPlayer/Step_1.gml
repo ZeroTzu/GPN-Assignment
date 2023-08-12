@@ -6,3 +6,16 @@
 
 
 
+
+if( hp<=0)
+{
+	isdead=true;
+	hascontrol=false;
+	sprite_index=sPlayerD;
+	image_index=5;
+	image_speed=0;
+}
+
+
+
+
