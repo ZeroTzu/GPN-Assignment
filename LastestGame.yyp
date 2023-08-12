@@ -46,7 +46,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sZombie","path":"sprites/sZombie/sZombie.yy",},},
@@ -156,12 +156,12 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"roomId":{"name":"L5_sewerRoom","path":"rooms/L5_sewerRoom/L5_sewerRoom.yy",},},
     {"roomId":{"name":"L1_tutorialRoom","path":"rooms/L1_tutorialRoom/L1_tutorialRoom.yy",},},
     {"roomId":{"name":"L2_streetRoom","path":"rooms/L2_streetRoom/L2_streetRoom.yy",},},
     {"roomId":{"name":"L3_pharmacyStreetRoom","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},},
     {"roomId":{"name":"L4_pharmacyRoom","path":"rooms/L4_pharmacyRoom/L4_pharmacyRoom.yy",},},
-    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
   ],
   "TextureGroups": [
