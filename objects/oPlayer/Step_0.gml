@@ -5,7 +5,8 @@ key_jump_held=keyboard_check(vk_space);
 key_fallThrough_held=keyboard_check(ord("C"));
 key_pick=keyboard_check_pressed(ord("E"));
 key_drop=keyboard_check_pressed(ord("F"));
-
+key_climb_up=keyboard_check(ord("W"));
+key_climb_down=keyboard_check(ord("S"));
 
 if (keyboard_check_pressed(vk_enter)) { show_debug_message(instance_count); }
 //Calculate movement
@@ -14,16 +15,21 @@ hsp=move*wsp;
 
 
 //Gravity
-vsp=vsp+grv;
+vspCurrent=vspCurrent+grv;
 
 
 if (ishit==true)
 {
 	direction=hitfromdirection;
 	hsp=lengthdir_x(10,direction);
-	vsp=lengthdir_x(10,direction);
+	vspCurrent=lengthdir_x(10,direction);
 	ishit=false;
 }
+
+
+
+
+
 
 
 
@@ -35,10 +41,11 @@ if(hascontrol)
 	//Jump
 	if(place_meeting(x,y+1,oWall)) && (key_jump)
 	{
-		vsp=-15;
+		vspCurrent=-15;
 	}
 
-	if(vsp<0)&&(!key_jump_held) vsp=max(vsp,0);
+	if(vspCurrent<0)&&(!key_jump_held) vspCurrent=max(vspCurrent,0);
+	
 
 	// Horizontal collision
 	var hcollision_obj = instance_place(x + hsp, y, oWall);
@@ -57,26 +64,55 @@ if(hascontrol)
 	    }
 	}
 	x = x + hsp;
+	
+	if(key_climb_up||key_climb_down)&&(place_meeting(x,y+1,oLadder))
+	{
+		var netymovement=0;
+		if(key_climb_up){
+			show_debug_message("should climb up")
+			netymovement=netymovement-9
+		}
+		if(key_climb_down)
+		{
+			show_debug_message("should climb down")
+			netymovement=netymovement+9
+		}
+		vspCurrent=netymovement
+	}
+	
+	
+	
+	if(place_meeting(x,y,oLadder))
+	{	
+		
+		
+	}
+	
+	
 }
 else{
 }
 
 // Vertical collision
-var vcollision_obj = instance_place(x, y + vsp, oWall);
+var vcollision_obj = instance_place(x, y + vspCurrent, oWall);
 if (vcollision_obj != noone)
 {
-    while (!place_meeting(x, y + sign(vsp), oWall))
+    while (!place_meeting(x, y + sign(vspCurrent), oWall))
     {
+		
         y = y + sign(vsp);
     }
 
    
     if (vcollision_obj.canFall==false)
     {
-		vsp=0;
+
+		vspCurrent=0;
+
     }
 }
-y = y + vsp;
+
+y = y + vspCurrent;
 
 
 //Pick up/drop weapons
@@ -141,7 +177,7 @@ if(hascontrol)
 		//if in air 
 		sprite_index=sPlayerJ;
 		image_speed=0;
-		if(sign(vsp)>0){
+		if(sign(vspCurrent)>0){
 			//moving up
 			image_index=1
 		}else{

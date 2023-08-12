@@ -1,18 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oKey",
+  "name": "oLadder",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-
-    "name": "Interactables",
-    "path": "folders/Objects/Interactables.yy",
-
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
-
+    "name": "Walls",
+    "path": "folders/Objects/Walls.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,14 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-
   "spriteId": {
-    "name": "sKey",
-    "path": "sprites/sKey/sKey.yy",
+    "name": "Sprite55",
+    "path": "sprites/Sprite55/Sprite55.yy",
   },
-
-  "spriteId": null,
-
   "spriteMaskId": null,
   "visible": true,
 }
