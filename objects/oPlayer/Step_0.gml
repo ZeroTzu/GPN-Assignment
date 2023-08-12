@@ -15,7 +15,7 @@ hsp=move*wsp;
 
 
 //Gravity
-vspCurrent=vsp+grv;
+vspCurrent=vspCurrent+grv;
 
 
 if (ishit==true)
@@ -43,9 +43,9 @@ if(hascontrol)
 	{
 		vspCurrent=-15;
 	}
-
+	show_debug_message("vsp before jump max "+string(vspCurrent))
 	if(vspCurrent<0)&&(!key_jump_held) vspCurrent=max(vspCurrent,0);
-	
+	show_debug_message("vsp after jump max "+string(vspCurrent))
 
 	// Horizontal collision
 	var hcollision_obj = instance_place(x + hsp, y, oWall);
@@ -78,7 +78,9 @@ if(hascontrol)
 			netymovement=netymovement+9
 		}
 		vspCurrent=netymovement
+		show_debug_message("vsp after climb/down "+string(vspCurrent))
 	}
+	
 	
 	
 }
@@ -98,12 +100,13 @@ if (vcollision_obj != noone)
    
     if (vcollision_obj.canFall==false)
     {
-
+		show_debug_message("vsp before can fall "+string(vspCurrent))
 		vspCurrent=0;
+		show_debug_message("vsp after can fall "+string(vspCurrent))
 
     }
 }
-
+show_debug_message("vsp at assign "+string(vspCurrent))
 y = y + vspCurrent;
 
 
@@ -115,27 +118,33 @@ if(key_pick)
 	
 	if (pickupCount>0)
 	{
-		if(holding==noone)
+		if(object_get_parent( pickupList[|0].object_index) == bWeapon)
 		{
-			holding = pickupList[| 0];
-			holding.isBeingCarried=true;
-			
-		}
-		else
-		{
-			show_debug_message("holding something");
-			for (var index=0;index <pickupCount;index++)
+			if(holding==noone)
 			{
-				holding.target=noone;
-				holding.isBeingCarried=false;
-				
-				
-				holding = pickupList[|index]
-				holding.target=id;
+				holding = pickupList[| 0];
 				holding.isBeingCarried=true;
-				break;
-
+			
 			}
+			else
+			{
+				show_debug_message("holding something");
+				for (var index=0;index <pickupCount;index++)
+				{
+					holding.target=noone;
+					holding.isBeingCarried=false;
+				
+				
+					holding = pickupList[|index]
+					holding.target=id;
+					holding.isBeingCarried=true;
+					break;
+
+				}
+			}
+		}
+		else if( pickupList[|0].object_index==oKey)
+		{
 			
 		}
 		
