@@ -16,6 +16,18 @@ hsp=move*wsp;
 vsp=vsp+grv;
 
 
+if (ishit==true)
+{
+	direction=hitfromdirection;
+	hsp=lengthdir_x(10,direction);
+	vsp=lengthdir_x(10,direction);
+	ishit=false;
+}
+
+
+
+
+
 
 if(hascontrol)
 {
@@ -46,10 +58,6 @@ if(hascontrol)
 	x = x + hsp;
 }
 else{
-	key_right=0;
-	key_left=0;
-	keyjump=0;
-	
 }
 
 // Vertical collision

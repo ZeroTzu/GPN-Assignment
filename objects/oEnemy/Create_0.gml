@@ -11,7 +11,7 @@ aggroDura=60;
 currentState="walking"
 
 hitfrom=0;
-canMove=false;
+canMove=true;
 
 currentDirection=-1;
 
