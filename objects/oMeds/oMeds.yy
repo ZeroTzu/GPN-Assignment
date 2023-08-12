@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSewerDoor",
+  "name": "oMeds",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sewerDoor",
-    "path": "sprites/sewerDoor/sewerDoor.yy",
+    "name": "sMeds",
+    "path": "sprites/sMeds/sMeds.yy",
   },
   "spriteMaskId": null,
   "visible": true,

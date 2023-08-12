@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet14",
+  "name": "lightProps",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
