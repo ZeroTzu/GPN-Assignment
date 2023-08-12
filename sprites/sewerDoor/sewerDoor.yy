@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "lever2",
-  "bbox_bottom": 31,
+  "name": "sewerDoor",
+  "bbox_bottom": 127,
   "bbox_left": 0,
-  "bbox_right": 27,
+  "bbox_right": 63,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0dc88ce9-609b-4773-972b-70dc4e43b06b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0576793d-e3ee-481f-a93a-4fe0f510923c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"45981123-3a48-4de0-a24b-4fe48e837b21",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0e3eaf91-8d59-4cb5-ba68-391b88a7c8e4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"670fcb22-aa1f-4cf6-b672-7dcb18cd0e98","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +33,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "lever2",
+    "name": "sewerDoor",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -43,7 +44,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -54,7 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0dc88ce9-609b-4773-972b-70dc4e43b06b","path":"sprites/lever2/lever2.yy",},},},"Disabled":false,"id":"3a2ba1fa-082e-407e-8076-d7fa70d5b49c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0576793d-e3ee-481f-a93a-4fe0f510923c","path":"sprites/sewerDoor/sewerDoor.yy",},},},"Disabled":false,"id":"87d4489c-c77a-4ff8-ae9b-bc9a42daa076","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"45981123-3a48-4de0-a24b-4fe48e837b21","path":"sprites/sewerDoor/sewerDoor.yy",},},},"Disabled":false,"id":"e2ff1301-f9eb-4991-a3b3-d99efa0f92ec","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +72,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 28,
+  "width": 64,
 }
