@@ -69,5 +69,11 @@ if (hsp!=0) image_xscale=-sign(hsp);
 
 
 
+if(attackcdCurrent!=0)
+{
+	attackcdCurrent--;	
+}
+
+
 
 

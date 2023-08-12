@@ -2,13 +2,15 @@
 
 if(mode!=TRANS_MODE.OFF)
 {
-	if(mode==TRANS_MODE.MOVIE)
+	if(mode==TRANS_MODE.MOVIE ||mode==TRANS_MODE.MOVIE_PROGRESS)
 	{
+		show_debug_message("running movie draw")
 		draw_set_color(c_black);
-		draw_rectangle(0,0,w,percent*h_quarter,false);
-		draw_rectangle(0,h,w,h-(percent*h_quarter),false);
+		draw_rectangle(0,0,w,percent*h_fifth,false);
+		draw_rectangle(0,h,w,h-(percent*h_fifth),false);
 	}
-	else
+	
+	else 
 	{
 		draw_set_color(c_black);
 		draw_rectangle(0,0,w,percent*h_half,false);

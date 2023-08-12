@@ -14,6 +14,7 @@ if( hp<=0)
 	sprite_index=sPlayerD;
 	image_index=5;
 	image_speed=0;
+	SlideTransition(TRANS_MODE.MOVIE);
 }
 
 
