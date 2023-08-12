@@ -545,7 +545,6 @@
     {"name":"inst_1C6C8FB2","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
     {"name":"inst_413A4076","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
     {"name":"inst_5C391E5E","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
-    {"name":"inst_3356D2DD","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1093,7 +1092,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_445D9086","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWallSmall_FallThrough","path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4064.0,"y":2176.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26C624EE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWallSmall_FallThrough","path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1088.0,"y":2048.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33E1DFE2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWallSmall_FallThrough","path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":2048.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3356D2DD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oKey","path":"objects/oKey/oKey.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5440.0,"y":2048.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"carTile","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":47,"SerialiseWidth":47,"TileCompressedData":[
 -1715,-2147483648,2,2,3,-45,-2147483648,6,10,11,-2147483648,-2147483648,0,0,-45,-2147483648,-2,0,-394,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"carTile","path":"tilesets/carTile/carTile.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

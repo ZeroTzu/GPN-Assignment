@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oKey",
+  "name": "Object31",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "Interactables",
+    "path": "folders/Objects/Interactables.yy",
   },
   "parentObjectId": null,
   "persistent": false,
