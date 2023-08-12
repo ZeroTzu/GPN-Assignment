@@ -3,6 +3,7 @@
   "resourceVersion": "1.0",
   "name": "waterRight",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
@@ -11,7 +12,10 @@
     "name": "Walls",
     "path": "folders/Objects/Walls.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oWall",
+    "path": "objects/oWall/oWall.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

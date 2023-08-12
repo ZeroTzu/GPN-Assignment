@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "waterUp",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "waterRightB",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -28,11 +26,13 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"desbug","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
+  ],
   "solid": false,
   "spriteId": {
-    "name": "spewingWaterUp",
-    "path": "sprites/spewingWaterUp/spewingWaterUp.yy",
+    "name": "spewingWaterRightB",
+    "path": "sprites/spewingWaterRightB/spewingWaterRightB.yy",
   },
   "spriteMaskId": null,
   "visible": true,

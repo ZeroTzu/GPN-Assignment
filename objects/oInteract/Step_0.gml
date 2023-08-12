@@ -3,3 +3,4 @@ if (collision_circle(x, y, radius, oPlayer, false, true)) {
 } else {
 	popup_id.visible = false;
 }
+

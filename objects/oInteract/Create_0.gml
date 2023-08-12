@@ -4,3 +4,4 @@ radius = 50;
 flipped = false;
 
 popup_id.visible = false;
+
