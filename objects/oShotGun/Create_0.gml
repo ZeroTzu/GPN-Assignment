@@ -1,7 +1,7 @@
 firingdelay=3;
 recoil=4;
 
-ammo=5000;
+ammo=6;
 pierce=3;
 range=500;
 projectileSpeed=200;

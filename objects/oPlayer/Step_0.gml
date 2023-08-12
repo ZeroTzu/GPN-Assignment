@@ -3,7 +3,8 @@ key_right=keyboard_check(ord("D"))|| keyboard_check(vk_right);
 key_jump=keyboard_check_pressed(vk_space);
 key_jump_held=keyboard_check(vk_space);
 key_fallThrough_held=keyboard_check(ord("C"));
-key_pickdrop=keyboard_check_pressed(ord("E"));
+key_pick=keyboard_check_pressed(ord("E"));
+key_drop=keyboard_check_pressed(ord("F"));
 
 if (keyboard_check_pressed(vk_enter)) { show_debug_message(instance_count); }
 //Calculate movement
@@ -70,10 +71,10 @@ y = y + vsp;
 
 
 //Pick up/drop weapons
-if(key_pickup)
+if(key_pick)
 {
 	var pickupList=ds_list_create();
-	var pickupCount=collision_circle_list(x,y,pickupRadius,oItem,false,true,pickupList,true)
+	var pickupCount=collision_circle_list(x,y,pickupRadius,bItem,false,true,pickupList,true)
 	
 	if (pickupCount>0)
 	{
@@ -83,7 +84,26 @@ if(key_pickup)
 			holding.isBeingCarried=true;
 			
 		}
+		else
+		{
+			show_debug_message("holding something");
+			for (var index=0;index <pickupCount;index++)
+			{
+				holding.target=noone;
+				holding.isBeingCarried=false;
+				
+				
+				holding = pickupList[|index]
+				holding.target=id;
+				holding.isBeingCarried=true;
+				break;
+
+			}
+			
+		}
 		
+	} else {
+			show_debug_message("pickup count is 0");		
 	}
 	
 	
@@ -92,6 +112,16 @@ if(key_pickup)
 	
 }
 
+
+
+if(key_drop){
+	if (holding!=noone)
+	{
+						holding.target=noone;
+				holding.isBeingCarried=false;
+	}
+	
+}
 
 //Animation
 if(!place_meeting(x,y+1,oWall))

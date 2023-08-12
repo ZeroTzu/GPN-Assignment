@@ -8,12 +8,17 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"bWeapon","path":"objects/bWeapon/bWeapon.yy",},"propertyId":{"name":"isBeingCarried","path":"objects/bWeapon/bWeapon.yy",},"value":"False",},
+  ],
   "parent": {
     "name": "Weapons",
     "path": "folders/Objects/Weapons.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "bWeapon",
+    "path": "objects/bWeapon/bWeapon.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
