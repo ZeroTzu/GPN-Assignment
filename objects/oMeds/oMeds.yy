@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSewerDoor",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "oMeds",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -28,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sewerDoor",
-    "path": "sprites/sewerDoor/sewerDoor.yy",
+    "name": "sMeds",
+    "path": "sprites/sMeds/sMeds.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "medicine",
-  "bbox_bottom": 18,
-  "bbox_left": 12,
-  "bbox_right": 22,
+  "name": "sMeds",
+  "bbox_bottom": 37,
+  "bbox_left": 0,
+  "bbox_right": 21,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18780b0a-2a8a-4ce7-8447-de36eebe9561",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ce2c5f2-c1ec-4e94-975c-78ee42cb447e",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1024,
+  "height": 38,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0d591675-14f6-4e6c-bc06-80c348358831","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8f32ed2a-4560-4e98-9582-df3b00db3075","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Sprites/Tiles.yy",
+    "name": "Interactables",
+    "path": "folders/Sprites/Interactables.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "medicine",
+    "name": "sMeds",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"18780b0a-2a8a-4ce7-8447-de36eebe9561","path":"sprites/medicine/medicine.yy",},},},"Disabled":false,"id":"592c5776-e20e-4343-9968-e5858185325d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9ce2c5f2-c1ec-4e94-975c-78ee42cb447e","path":"sprites/sMeds/sMeds.yy",},},},"Disabled":false,"id":"6895a1ad-e21c-431c-876c-d0bfc901aba5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1024,
+  "width": 22,
 }
