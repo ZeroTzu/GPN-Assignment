@@ -16,3 +16,5 @@ else
 
 
 
+
+draw_rectangle_color(x+point_x-2,y-2,x+point_x+2,y+2,c_red,c_red,c_red,c_red,false)

@@ -28,24 +28,23 @@ inSight=ds_list_create();
 var __num=0;
 if(currentDirection>0)
 {
-	show_debug_message("facing the right"+string(currentDirection))
-	_num=collision_line_list(x,y-40,x+sightRange_x,y-40,bActor,false,true,inSight,true);
-	if (_num>0){
+	__num=collision_line_list(x,y-40,x+sightRange_x,y-40,bActor,false,true,inSight,true);
+	if (__num>0){
+		show_debug_message("YO LOL SEE I YOU SIKE")
 		point_x=(ds_list_find_value(inSight,0).x-x)<sightRange_x?(ds_list_find_value(inSight,0).x-x):sightRange_x;
 	}
 }
 else
 {
-	show_debug_message("facing the left"+string(currentDirection))
-	_num=collision_line_list(x,y-40,x-sightRange_x,y-40,bActor,false,true,inSight,true);
-	if (_num>0){
+	__num=collision_line_list(x,y-40,x-sightRange_x,y-40,bActor,false,true,inSight,true);
+	if (__num>0){
 		point_x=(ds_list_find_value(inSight,0).x-x)<sightRange_x?(ds_list_find_value(inSight,0).x-x):sightRange_x;
 	}
 }
 
 if(__num>0)
 {
-	show_debug_message(string(_num))
+	show_debug_message(string(__num))
 	if(ds_list_find_value(inSight, 0).object_index == oPlayer)
 	{
 		currentState="running"
@@ -64,6 +63,10 @@ if(__num>0)
 	{
 		hspCurrent=0
 	}
+}
+else{
+	show_debug_message("cant see shit")
+	
 }
 
 ds_list_destroy(inSight)
