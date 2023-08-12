@@ -15,7 +15,7 @@ hsp=move*wsp;
 
 
 //Gravity
-vspCurrent=vspCurrent+grv;
+vspCurrent=vsp+grv;
 
 
 if (ishit==true)
@@ -78,14 +78,6 @@ if(hascontrol)
 			netymovement=netymovement+9
 		}
 		vspCurrent=netymovement
-	}
-	
-	
-	
-	if(place_meeting(x,y,oLadder))
-	{	
-		
-		
 	}
 	
 	
@@ -204,5 +196,3 @@ if(hascontrol)
 	}
 	if (hsp!=0) image_xscale=sign(hsp);
 }
-
-
