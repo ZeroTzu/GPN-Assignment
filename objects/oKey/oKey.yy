@@ -9,7 +9,10 @@
     "name": "Items",
     "path": "folders/Objects/Items.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "bItem",
+    "path": "objects/bItem/bItem.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
