@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object31",
+  "name": "oSewerDoor",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

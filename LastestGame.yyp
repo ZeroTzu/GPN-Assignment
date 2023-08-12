@@ -106,7 +106,7 @@
     {"id":{"name":"medicine","path":"sprites/medicine/medicine.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"carTile","path":"tilesets/carTile/carTile.yy",},},
-    {"id":{"name":"Object31","path":"objects/Object31/Object31.yy",},},
+    {"id":{"name":"oSewerDoor","path":"objects/oSewerDoor/oSewerDoor.yy",},},
     {"id":{"name":"sPlayerPunch","path":"sprites/sPlayerPunch/sPlayerPunch.yy",},},
     {"id":{"name":"bActor","path":"objects/bActor/bActor.yy",},},
     {"id":{"name":"chairTablePropsTiles","path":"tilesets/chairTablePropsTiles/chairTablePropsTiles.yy",},},

@@ -79,7 +79,7 @@
     {"name":"medicine","order":11,"path":"sprites/medicine/medicine.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
     {"name":"carTile","order":8,"path":"tilesets/carTile/carTile.yy",},
-    {"name":"Object31","order":5,"path":"objects/Object31/Object31.yy",},
+    {"name":"oSewerDoor","order":5,"path":"objects/oSewerDoor/oSewerDoor.yy",},
     {"name":"sPlayerPunch","order":4,"path":"sprites/sPlayerPunch/sPlayerPunch.yy",},
     {"name":"chairTablePropsTiles","order":6,"path":"tilesets/chairTablePropsTiles/chairTablePropsTiles.yy",},
     {"name":"sBarStreet","order":4,"path":"sprites/sBarStreet/sBarStreet.yy",},
