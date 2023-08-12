@@ -13,10 +13,10 @@ else if (actioncdCurrent==0 && hspCurrent==0)
 
 if( isAggroing==false)
 {
-	hspCurrent=0;	
-	
+	hspCurrent=0;
 }
 
+vspCurrent=vsp
 
 
 
@@ -30,7 +30,7 @@ if(currentDirection>0)
 {
 	__num=collision_line_list(x,y-40,x+sightRange_x,y-40,bActor,false,true,inSight,true);
 	if (__num>0){
-		show_debug_message("YO LOL SEE I YOU SIKE")
+
 		point_x=(ds_list_find_value(inSight,0).x-x)<sightRange_x?(ds_list_find_value(inSight,0).x-x):sightRange_x;
 	}
 }
@@ -47,15 +47,14 @@ if(__num>0)
 	show_debug_message(string(__num))
 	if(ds_list_find_value(inSight, 0).object_index == oPlayer)
 	{
-		currentState="running"
+		currentState="running";
 		hspCurrent=currentDirection*runsp;
 	}
 	else if(currentState=="running"){
-		aggroDura=max(0,aggroDura-1)
-		show_debug_message("found player, running")
+		aggroDura=max(0,aggroDura-1);
 		if(aggroDura==0)
 		{
-			currentState="walking"
+			currentState="walking";
 			aggroDura=60;
 		}
 	}
@@ -94,21 +93,22 @@ if(place_meeting(x+hspCurrent,y,oWall))
 	hspCurrent=-hspCurrent;
 	currentDirection=sign(hspCurrent)
 }
-x=x+hspCurrent;
+x=x+hspCurrent;	
 
 //Vertical collision
-if(place_meeting(x,y+vsp,oWall))
+if(place_meeting(x,y+vspCurrent,oWall))
 {
 	//if this enemy is moving vertically, and is about to hit a wall,
-	while(!place_meeting(x,y+sign(vsp),oWall))
+	while(!place_meeting(x,y+sign(vspCurrent),oWall))
 	{
 		//while it does not hit the wall change its vsp until it does
-		y=y+sign(vsp)
+		y=y+sign(vspCurrent)
 	}
 	
-	vsp=0;
+	vspCurrent=0;
 }
-y=y+vsp
+show_debug_message(string(vsp))
+y=y+vspCurrent
 #endregion
 
 
