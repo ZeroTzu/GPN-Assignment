@@ -52,7 +52,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sZombie","path":"sprites/sZombie/sZombie.yy",},},
@@ -216,7 +216,6 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"L8_end","path":"rooms/L8_end/L8_end.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"L1_tutorialRoom","path":"rooms/L1_tutorialRoom/L1_tutorialRoom.yy",},},
     {"roomId":{"name":"L2_streetRoom","path":"rooms/L2_streetRoom/L2_streetRoom.yy",},},
@@ -225,6 +224,7 @@
     {"roomId":{"name":"L5_pharmacyStreetRoomExit","path":"rooms/L5_pharmacyStreetRoomExit/L5_pharmacyStreetRoomExit.yy",},},
     {"roomId":{"name":"L6_sewerRoom","path":"rooms/L6_sewerRoom/L6_sewerRoom.yy",},},
     {"roomId":{"name":"L7_roadHome","path":"rooms/L7_roadHome/L7_roadHome.yy",},},
+    {"roomId":{"name":"L8_end","path":"rooms/L8_end/L8_end.yy",},},
     {"roomId":{"name":"L7_roadHome","path":"rooms/L7_roadHome/L7_roadHome.yy",},},
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"roomId":{"name":"L1_tutorialRoom","path":"rooms/L1_tutorialRoom/L1_tutorialRoom.yy",},},
