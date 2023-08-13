@@ -7,6 +7,7 @@ if(file_exists("checkpoint.ini"))
 	x=ini_read_real("player","x",x);
 	y=ini_read_real("player","y",y);
 	hp=ini_read_real("player","hp",hp);
+	holding.ammo=min(12,holding.ammo+6);
 	isdead=false;
 	ini_close()
 }
