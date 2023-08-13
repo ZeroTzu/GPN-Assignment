@@ -3,8 +3,6 @@
 
 with(oPlayer)
 {
-	x=other.xPos;
-	y=other.yPos;
 	
 	if(hascontrol)
 	{
