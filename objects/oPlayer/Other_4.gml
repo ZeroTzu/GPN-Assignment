@@ -16,7 +16,7 @@ else{
 	hp=3;
 	isdead=false;
 	
-	holding.ammo+=6
+	holding.ammo=min(12,holding.ammo+6);
 }
 
 
