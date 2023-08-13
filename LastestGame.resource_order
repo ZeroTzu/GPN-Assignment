@@ -134,6 +134,7 @@
     {"name":"obj","order":9,"path":"objects/obj/obj.yy",},
     {"name":"oBehindYou","order":4,"path":"objects/oBehindYou/oBehindYou.yy",},
     {"name":"sGunShotgun","order":2,"path":"sprites/sGunShotgun/sGunShotgun.yy",},
+    {"name":"oInjure","order":12,"path":"objects/oInjure/oInjure.yy",},
     {"name":"oPersistentManager","order":8,"path":"objects/oPersistentManager/oPersistentManager.yy",},
     {"name":"soundsWater","order":2,"path":"sounds/soundsWater/soundsWater.yy",},
     {"name":"SnShotGunEmpty","order":1,"path":"sounds/SnShotGunEmpty/SnShotGunEmpty.yy",},

@@ -171,6 +171,7 @@
     {"id":{"name":"obj","path":"objects/obj/obj.yy",},},
     {"id":{"name":"oBehindYou","path":"objects/oBehindYou/oBehindYou.yy",},},
     {"id":{"name":"sGunShotgun","path":"sprites/sGunShotgun/sGunShotgun.yy",},},
+    {"id":{"name":"oInjure","path":"objects/oInjure/oInjure.yy",},},
     {"id":{"name":"oPersistentManager","path":"objects/oPersistentManager/oPersistentManager.yy",},},
     {"id":{"name":"soundsWater","path":"sounds/soundsWater/soundsWater.yy",},},
     {"id":{"name":"SnShotGunEmpty","path":"sounds/SnShotGunEmpty/SnShotGunEmpty.yy",},},
