@@ -1,10 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
-
-
 if(attackcdCurrent==0)
 {
 	with(oPlayer)
@@ -12,6 +5,7 @@ if(attackcdCurrent==0)
 			if (oPlayer.isdead==false)
 			{
 				show_debug_message(hp)
+				audio_play_sound(soundsZombie, 0, false);
 				hp--;
 				flash=3;
 				hitfromdirection= -other.hsp;
@@ -22,4 +16,4 @@ if(attackcdCurrent==0)
 		attackcdCurrent=attackcd
 }
 
-//				audio_play_sound(sounds, 0, false);
+			
