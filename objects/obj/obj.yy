@@ -1,18 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oKey",
+  "name": "obj",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "Misc",
+    "path": "folders/Objects/Misc.yy",
   },
-  "parentObjectId": {
-    "name": "bItem",
-    "path": "objects/bItem/bItem.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,14 +23,9 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"keyfor","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":2,},
-  ],
+  "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sKey",
-    "path": "sprites/sKey/sKey.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

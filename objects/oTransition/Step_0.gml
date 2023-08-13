@@ -45,7 +45,7 @@ if(mode!=TRANS_MODE.OFF)
 			}
 			case TRANS_MODE.RESTART:
 			{
-				game_restart();
+				room_restart();
 				break;
 			}
 			case TRANS_MODE.MOVIE:

@@ -44,7 +44,6 @@ else
 
 if(__num>0)
 {
-	show_debug_message(string(__num))
 	if(ds_list_find_value(inSight, 0).object_index == oPlayer)
 	{
 		currentState="running";
@@ -64,7 +63,6 @@ if(__num>0)
 	}
 }
 else{
-	show_debug_message("cant see shit")
 	
 }
 
@@ -107,7 +105,6 @@ if(place_meeting(x,y+vspCurrent,oWall))
 	
 	vspCurrent=0;
 }
-show_debug_message(string(vsp))
 y=y+vspCurrent
 #endregion
 
