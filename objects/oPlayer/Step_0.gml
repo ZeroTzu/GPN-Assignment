@@ -12,7 +12,7 @@ key_enter=keyboard_check_pressed(vk_enter)
 
 if (key_enter)
 {
-	show_debug_message( "hp: "+string(hp)+"isdead: "+string(isdead))
+	show_debug_message( "hp: "+string(hp)+"isdead: "+string(isdead)+ "holding: "+string(holding))
 }
 //Calculate movement
 var move =key_right-key_left;
@@ -116,12 +116,13 @@ if(key_pick)
 {
 	var pickupList=ds_list_create();
 	var pickupCount=collision_circle_list(x,y,pickupRadius,bItem,false,true,pickupList,true)
-	
+	show_debug_message("Count is "+string(pickupCount))
 	if (pickupCount>0)
 	{
+		
 		if(object_get_parent( pickupList[|0].object_index) == bWeapon)
 		{
-			show_debug_message("object index of weapon is: "+string(object_get_parent( pickupList[|0].object_index)))
+
 			if(holding==noone)
 			{
 				holding = pickupList[| 0];
@@ -146,7 +147,8 @@ if(key_pick)
 				}
 			}
 		}
-		else if( pickupList[|0].object_index==oKey || pickupList[|0].object_index==oMeds )
+		
+		 else if( pickupList[|0].object_index==oKey || pickupList[|0].object_index==oMeds )
 		{
 			for( var index=0;index<array_length(inventory);index++)
 			{
@@ -156,20 +158,25 @@ if(key_pick)
 					inventory[index]=pickupList[|0].keyfor;
 					show_debug_message("picked up item: "+string(pickupList[|0].keyfor))
 					instance_destroy(pickupList[|0])
-					
 					break;
 				}
 				
 			}
 		}
+		else if(pickupList[|0].object_index==oAmmo)
+		{
+			show_debug_message()
+			holding.ammo+=3;
+			instance_destroy(pickupList[|0])
+		}
 		
-	} else {
-			show_debug_message("pickup count is 0");		
-	}
 	
 	
 	ds_list_destroy(pickupList)
-	
+	}
+	else {
+			show_debug_message("pickup count is 0");		
+	}
 	
 }
 

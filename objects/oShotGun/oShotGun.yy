@@ -9,7 +9,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"bWeapon","path":"objects/bWeapon/bWeapon.yy",},"propertyId":{"name":"isBeingCarried","path":"objects/bWeapon/bWeapon.yy",},"value":"False",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"bWeapon","path":"objects/bWeapon/bWeapon.yy",},"propertyId":{"name":"isBeingCarried","path":"objects/bWeapon/bWeapon.yy",},"value":"True",},
   ],
   "parent": {
     "name": "Weapons",

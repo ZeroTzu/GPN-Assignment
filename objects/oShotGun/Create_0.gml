@@ -8,3 +8,8 @@ projectileSpeed=200;
 
 bullet2varyangle=0;
 bullet3varyangle=0;
+
+with(oPlayer)
+{
+	holding=other.id;
+}

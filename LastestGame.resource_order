@@ -51,9 +51,11 @@
     {"name":"soundsBat","order":6,"path":"sounds/soundsBat/soundsBat.yy",},
     {"name":"key","order":9,"path":"sprites/key/key.yy",},
     {"name":"oLeverA","order":4,"path":"objects/oLeverA/oLeverA.yy",},
+    {"name":"Sprite61","order":19,"path":"sprites/Sprite61/Sprite61.yy",},
     {"name":"spewingWaterRightB","order":23,"path":"sprites/spewingWaterRightB/spewingWaterRightB.yy",},
     {"name":"sGun","order":1,"path":"sprites/sGun/sGun.yy",},
     {"name":"propTiles","order":5,"path":"tilesets/propTiles/propTiles.yy",},
+    {"name":"oAmmo","order":7,"path":"objects/oAmmo/oAmmo.yy",},
     {"name":"ScreenShake","order":1,"path":"scripts/ScreenShake/ScreenShake.yy",},
     {"name":"keyTile","order":7,"path":"tilesets/keyTile/keyTile.yy",},
     {"name":"streetTiles","order":3,"path":"tilesets/streetTiles/streetTiles.yy",},
@@ -61,10 +63,8 @@
     {"name":"spewingWaterDown","order":19,"path":"sprites/spewingWaterDown/spewingWaterDown.yy",},
     {"name":"sewerWaterTile","order":15,"path":"tilesets/sewerWaterTile/sewerWaterTile.yy",},
     {"name":"waterDown","order":4,"path":"objects/waterDown/waterDown.yy",},
-
     {"name":"soundsPlayerInjured","order":4,"path":"sounds/soundsPlayerInjured/soundsPlayerInjured.yy",},
     {"name":"oMeds","order":6,"path":"objects/oMeds/oMeds.yy",},
-
     {"name":"sZombieA","order":1,"path":"sprites/sZombieA/sZombieA.yy",},
     {"name":"oWord","order":4,"path":"objects/oWord/oWord.yy",},
     {"name":"spewingWaterRight","order":21,"path":"sprites/spewingWaterRight/spewingWaterRight.yy",},
@@ -72,10 +72,8 @@
     {"name":"oLadder","order":7,"path":"objects/oLadder/oLadder.yy",},
     {"name":"sBatD","order":9,"path":"sprites/sBatD/sBatD.yy",},
     {"name":"L1_tutorialRoom","order":2,"path":"rooms/L1_tutorialRoom/L1_tutorialRoom.yy",},
-
     {"name":"oKey","order":5,"path":"objects/oKey/oKey.yy",},
     {"name":"soundsZombie","order":7,"path":"sounds/soundsZombie/soundsZombie.yy",},
-
     {"name":"sPlayerD","order":6,"path":"sprites/sPlayerD/sPlayerD.yy",},
     {"name":"sBulletShotgunShell","order":3,"path":"sprites/sBulletShotgunShell/sBulletShotgunShell.yy",},
     {"name":"sKey","order":7,"path":"sprites/sKey/sKey.yy",},
