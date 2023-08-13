@@ -47,7 +47,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sZombie","path":"sprites/sZombie/sZombie.yy",},},
@@ -125,6 +125,7 @@
     {"id":{"name":"sMeds","path":"sprites/sMeds/sMeds.yy",},},
     {"id":{"name":"sWallSmall","path":"sprites/sWallSmall/sWallSmall.yy",},},
     {"id":{"name":"shWhite","path":"shaders/shWhite/shWhite.yy",},},
+    {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
     {"id":{"name":"sPlayer1Hand","path":"sprites/sPlayer1Hand/sPlayer1Hand.yy",},},
     {"id":{"name":"shelfTile","path":"tilesets/shelfTile/shelfTile.yy",},},
     {"id":{"name":"ladder","path":"sprites/ladder/ladder.yy",},},
@@ -132,6 +133,7 @@
     {"id":{"name":"sGunShotgun","path":"sprites/sGunShotgun/sGunShotgun.yy",},},
     {"id":{"name":"SnShotGunEmpty","path":"sounds/SnShotGunEmpty/SnShotGunEmpty.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
+    {"id":{"name":"Sprite56","path":"sprites/Sprite56/Sprite56.yy",},},
     {"id":{"name":"wordTile","path":"sprites/wordTile/wordTile.yy",},},
     {"id":{"name":"sZombieRR","path":"sprites/sZombieRR/sZombieRR.yy",},},
     {"id":{"name":"door","path":"sprites/door/door.yy",},},

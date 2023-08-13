@@ -103,7 +103,6 @@ if (vcollision_obj != noone)
 		 vspCurrent=0;
     }
 }
-show_debug_message("vsp is: "+string(vspCurrent))
 y = y + vspCurrent;
 
 
@@ -148,9 +147,11 @@ if(key_pick)
 			{
 				if(inventory[index]==-1)
 				{
-					inventory[index]=pickupList[|0]
+					show_debug_message(pickupList[|0].keyfor);
+					inventory[index]=pickupList[|0].keyfor;
+					show_debug_message("picked up item: "+string(pickupList[|0].keyfor))
 					instance_destroy(pickupList[|0])
-					show_debug_message("picked up item: "+string(pickupList[|0]))
+					
 					break;
 				}
 				
