@@ -234,7 +234,7 @@ if(hascontrol)
 				sprite_index=sPlayerR;
 			}
 			else{
-				image_speed=0.5;
+				image_speed=0.2;
 				sprite_index=sPlayerR;
 			}
 			

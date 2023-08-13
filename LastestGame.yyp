@@ -52,7 +52,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sZombie","path":"sprites/sZombie/sZombie.yy",},},
@@ -139,6 +139,7 @@
     {"id":{"name":"bgRoom1","path":"sprites/bgRoom1/bgRoom1.yy",},},
     {"id":{"name":"oSewerDoor","path":"objects/oSewerDoor/oSewerDoor.yy",},},
     {"id":{"name":"oHurtSounds","path":"objects/oHurtSounds/oHurtSounds.yy",},},
+    {"id":{"name":"oMonsterSound","path":"objects/oMonsterSound/oMonsterSound.yy",},},
     {"id":{"name":"sPlayerPunch","path":"sprites/sPlayerPunch/sPlayerPunch.yy",},},
     {"id":{"name":"bActor","path":"objects/bActor/bActor.yy",},},
     {"id":{"name":"chairTablePropsTiles","path":"tilesets/chairTablePropsTiles/chairTablePropsTiles.yy",},},
@@ -185,6 +186,7 @@
     {"id":{"name":"door","path":"sprites/door/door.yy",},},
     {"id":{"name":"oEnemy2","path":"objects/oEnemy2/oEnemy2.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
+    {"id":{"name":"snMOnster","path":"sounds/snMOnster/snMOnster.yy",},},
     {"id":{"name":"L5_pharmacyStreetRoomExit","path":"rooms/L5_pharmacyStreetRoomExit/L5_pharmacyStreetRoomExit.yy",},},
     {"id":{"name":"sewerDoor","path":"sprites/sewerDoor/sewerDoor.yy",},},
     {"id":{"name":"snSuspense1","path":"sounds/snSuspense1/snSuspense1.yy",},},
