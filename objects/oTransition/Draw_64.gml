@@ -17,8 +17,7 @@ if(mode!=TRANS_MODE.OFF)
 	}
 
 }
-draw_set_alpha(c_white);
-draw_text_color(50,50,string(percent), c_lime, c_lime, c_green, c_green, 1);
+
 
 
 
