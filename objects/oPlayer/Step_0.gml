@@ -146,7 +146,7 @@ if(key_pick)
 				}
 			}
 		}
-		else if( pickupList[|0].object_index==oKey)
+		else if( pickupList[|0].object_index==oKey || pickupList[|0].object_index==oMeds )
 		{
 			for( var index=0;index<array_length(inventory);index++)
 			{
