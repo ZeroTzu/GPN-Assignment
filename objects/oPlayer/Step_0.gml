@@ -165,7 +165,6 @@ if(key_pick)
 		}
 		else if(pickupList[|0].object_index==oAmmo)
 		{
-			show_debug_message()
 			holding.ammo+=3;
 			instance_destroy(pickupList[|0])
 		}
