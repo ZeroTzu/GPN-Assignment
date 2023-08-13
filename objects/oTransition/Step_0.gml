@@ -50,7 +50,6 @@ if(mode!=TRANS_MODE.OFF)
 			}
 			case TRANS_MODE.MOVIE:
 			{
-				show_debug_message("changing to MOVIE PROGRESS")
 				mode=TRANS_MODE.MOVIE_PROGRESS;
 				break;
 			}

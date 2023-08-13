@@ -7,8 +7,13 @@ key_pick=keyboard_check_pressed(ord("E"));
 key_drop=keyboard_check_pressed(ord("F"));
 key_climb_up=keyboard_check(ord("W"));
 key_climb_down=keyboard_check(ord("S"));
+key_enter=keyboard_check_pressed(vk_enter)
 
-if (keyboard_check_pressed(vk_enter)) { show_debug_message(instance_count); }
+
+if (key_enter)
+{
+	show_debug_message( "hp: "+string(hp)+"isdead: "+string(isdead))
+}
 //Calculate movement
 var move =key_right-key_left;
 hsp=move*wsp;
@@ -141,7 +146,7 @@ if(key_pick)
 				}
 			}
 		}
-		else if( pickupList[|0].object_index==oKey)
+		else if( pickupList[|0].object_index==oKey || pickupList[|0].object_index==oMeds )
 		{
 			for( var index=0;index<array_length(inventory);index++)
 			{

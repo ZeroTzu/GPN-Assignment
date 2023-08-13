@@ -7,13 +7,14 @@ if(file_exists("checkpoint.ini"))
 	x=ini_read_real("player","x",x);
 	y=ini_read_real("player","y",y);
 	hp=ini_read_real("player","hp",hp);
-
+	isdead=false;
 	ini_close()
 }
 else{
-	
-	
-	show_debug_message("file dont exist in oplayer room start");
+	x=oStartLocation.x;
+	y=oStartLocation.y;
+	hp=3;
+	isdead=false;
 }
 
 
