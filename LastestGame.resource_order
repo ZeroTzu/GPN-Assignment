@@ -27,12 +27,12 @@
     {"name":"Zombie","order":10,"path":"folders/Sprites/Enemies/Zombie.yy",},
     {"name":"Zombie2","order":12,"path":"folders/Sprites/Enemies/Zombie2.yy",},
     {"name":"Interactables","order":27,"path":"folders/Sprites/Interactables.yy",},
+    {"name":"Checkpoints","order":10,"path":"folders/Sprites/Interactables/Checkpoints.yy",},
     {"name":"Player","order":22,"path":"folders/Sprites/Player.yy",},
     {"name":"Tiles","order":25,"path":"folders/Sprites/Tiles.yy",},
     {"name":"Weapons","order":26,"path":"folders/Sprites/Weapons.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Checkpoints","order":10,"path":"folders/Sprites/Interactables/Checkpoints.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"desk","order":12,"path":"sprites/desk/desk.yy",},
