@@ -20,3 +20,11 @@ if (vcollision_obj != noone)
     }
 }
 y = y + vsp;
+
+if (collision_circle(x, y, radius, oPlayer, false, true) && pressed == false) {
+	popup_id.visible = true;
+} else {
+	popup_id.visible = false;
+}
+
+
