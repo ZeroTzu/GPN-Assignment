@@ -6,9 +6,6 @@ var playerIsDead=oPlayer.isdead;
 show_debug_message("running room end in oGameManager")
 if(!playerIsDead) &&(file_exists("checkpoint.ini"))
 {
-
-	show_debug_message("file is sugma")
-	show_debug_message("file is deleted from room end")
 	file_delete("checkpoint.ini");	
 		
 }
