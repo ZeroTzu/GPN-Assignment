@@ -26,26 +26,14 @@ if (menu_x > gui_width + 150 && (menu_committed != -1))
 {
 	switch (menu_committed) 
 	{
-		case 2:
+		case 1:
 		{
-			
 			if(file_exists("checkpoint.ini"))
 			{
 				file_delete("checkpoint.ini")
 			}
 			SlideTransition(TRANS_MODE.GOTO, L1_tutorialRoom); 
-			break;
-			
-			
-		}
-		case 1:{
-			if(file_exists("checkpoint.ini"))
-			{
-				SlideTransition(TRANS_MODE.GOTO, L1_tutorialRoom); 
-				break;
-			}
-			menu_control=true;
-			
+			break;		
 		}
 		case 0: game_end(); break;
 	}
