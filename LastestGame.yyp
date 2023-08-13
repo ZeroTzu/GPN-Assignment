@@ -202,7 +202,7 @@
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"sewerWater","path":"sprites/sewerWater/sewerWater.yy",},},
     {"id":{"name":"oWallSmall_FallThrough","path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},},
-    {"id":{"name":"oNightAmbience1","path":"objects/oNightAmbience1/oNightAmbience1.yy",},},
+    {"id":{"name":"oNightAmbience","path":"objects/oNightAmbience/oNightAmbience.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
   ],
   "RoomOrderNodes": [

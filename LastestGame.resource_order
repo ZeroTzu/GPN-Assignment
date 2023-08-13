@@ -164,6 +164,6 @@
     {"name":"oTransition","order":3,"path":"objects/oTransition/oTransition.yy",},
     {"name":"sewerWater","order":17,"path":"sprites/sewerWater/sewerWater.yy",},
     {"name":"oWallSmall_FallThrough","order":1,"path":"objects/oWallSmall_FallThrough/oWallSmall_FallThrough.yy",},
-    {"name":"oNightAmbience1","order":23,"path":"objects/oNightAmbience1/oNightAmbience1.yy",},
+    {"name":"oNightAmbience","order":2,"path":"objects/oNightAmbience/oNightAmbience.yy",},
   ],
 }
