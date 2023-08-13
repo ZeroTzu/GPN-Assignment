@@ -181,14 +181,6 @@ if(key_pick)
 
 
 
-if(key_drop){
-	if (holding!=noone)
-	{
-						holding.target=noone;
-				holding.isBeingCarried=false;
-	}
-	
-}
 
 
 //Animation

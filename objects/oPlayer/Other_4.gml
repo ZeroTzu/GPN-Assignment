@@ -15,6 +15,7 @@ else{
 	y=oStartLocation.y;
 	hp=3;
 	isdead=false;
+	
 	holding.ammo+=6
 }
 
