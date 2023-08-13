@@ -1,1 +1,0 @@
-atarget=L3_pharmacyStreetRoom;
