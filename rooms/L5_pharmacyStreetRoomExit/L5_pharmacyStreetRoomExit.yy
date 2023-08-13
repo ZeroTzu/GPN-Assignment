@@ -473,6 +473,7 @@
     {"name":"inst_6DC5ACA3","path":"rooms/L5_pharmacyStreetRoomExit/L5_pharmacyStreetRoomExit.yy",},
     {"name":"inst_47C561A3","path":"rooms/L5_pharmacyStreetRoomExit/L5_pharmacyStreetRoomExit.yy",},
     {"name":"inst_2A83DDF3","path":"rooms/L5_pharmacyStreetRoomExit/L5_pharmacyStreetRoomExit.yy",},
+    {"name":"inst_53D63B4B","path":"rooms/L5_pharmacyStreetRoomExit/L5_pharmacyStreetRoomExit.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -668,6 +669,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E917428","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLevelEnd","path":"objects/oLevelEnd/oLevelEnd.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelEnd","path":"objects/oLevelEnd/oLevelEnd.yy",},"propertyId":{"name":"target","path":"objects/oLevelEnd/oLevelEnd.yy",},"value":"L6_sewerRoom",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":5.5,"x":5824.0,"y":2336.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53D63B4B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBehindYou","path":"objects/oBehindYou/oBehindYou.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6144.0,"y":2496.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemy","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65157D81","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemyInstaKill","path":"objects/oEnemyInstaKill/oEnemyInstaKill.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4864.0,"y":2592.0,},

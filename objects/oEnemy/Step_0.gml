@@ -26,7 +26,8 @@ else
 
 if(_num<=0)
 {
-	hsp=4;
+
+	hsp=currentDirection* 4;
 }
 else
 {
@@ -34,10 +35,20 @@ else
 	//show_debug_message(string(ds_list_find_value(inSight,0))+" is "+string(oPlayer.id))
 	
 	
+
 	if(ds_list_find_value(inSight, 0) == oPlayer.id)
 	{
 		currentState="running"
 		hsp=currentDirection*runsp;
+		if(soundid==noone)
+		{
+
+		}
+		else if(!audio_is_playing(snSpotted))
+		{
+			
+
+		}
 	}
 	else if(currentState=="running"){
 		aggroDura=max(0,aggroDura-1)

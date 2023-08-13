@@ -515,6 +515,7 @@
     {"name":"inst_2F80DCF5","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
     {"name":"inst_432B2877","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
     {"name":"inst_12BDED4","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
+    {"name":"inst_4EA7977C","path":"rooms/L3_pharmacyStreetRoom/L3_pharmacyStreetRoom.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -579,6 +580,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2A425937","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4160.0,"y":2720.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F80DCF5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4736.0,"y":2720.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_432B2877","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":2624.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EA7977C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oNightAmbience","path":"objects/oNightAmbience/oNightAmbience.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":2368.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Wall","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E5BB201","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWord","path":"objects/oWord/oWord.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5346.0,"y":2377.0,},

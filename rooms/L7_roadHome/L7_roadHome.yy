@@ -9,7 +9,6 @@
   "instanceCreationOrder": [
     {"name":"inst_4503B03E","path":"rooms/L7_roadHome/L7_roadHome.yy",},
     {"name":"inst_474B0DE2","path":"rooms/L7_roadHome/L7_roadHome.yy",},
-    {"name":"inst_2E4CE479","path":"rooms/L7_roadHome/L7_roadHome.yy",},
     {"name":"inst_147BC7C5","path":"rooms/L7_roadHome/L7_roadHome.yy",},
     {"name":"inst_5804DD6F","path":"rooms/L7_roadHome/L7_roadHome.yy",},
     {"name":"inst_5D660290","path":"rooms/L7_roadHome/L7_roadHome.yy",},
@@ -70,7 +69,6 @@
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"PlayerInjured","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E4CE479","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPlayerInjured","path":"objects/oPlayerInjured/oPlayerInjured.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":1248.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_147BC7C5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":129.0,"y":1015.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5804DD6F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":147.0,"y":1063.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D660290","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":1344.0,},

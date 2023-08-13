@@ -21,3 +21,5 @@ dead=false
 sightRange_x=64*10
 point_x=0;
 inSight=0;
+
+soundid=noone
