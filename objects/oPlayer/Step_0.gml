@@ -83,8 +83,15 @@ if(hascontrol)
 			netymovement=netymovement+9
 		}
 		vspCurrent=netymovement
-		show_debug_message("vsp after climb/down "+string(vspCurrent))
+		sprite_index=sPlayer1Climb;
+		image_speed=1;
+		is_climbing=true;
+		show_debug_message(string(is_climbing))
+	}else{
+		is_climbing=false;
+		show_debug_message(string(is_climbing))
 	}
+	
 	
 	
 	
@@ -189,16 +196,27 @@ if(hascontrol)
 	if(!place_meeting(x,y+1,oWall))
 	{
 		//if in air 
-		sprite_index=sPlayerJ;
-		image_speed=0;
-		if(sign(vspCurrent)>0){
-			//moving up
-			image_index=1
-		}else{
-			//moving down
-			image_index=7
+		if(is_climbing==false)
+		{		
+			sprite_index=sPlayerJ;
+			image_speed=0;
+
+			
+			if(sign(vspCurrent)>0)
+			{
+				//moving up
+				image_index=1
+			}else
+			{
+				//moving down
+				image_index=7
+			}
 		}
-	
+		else{
+			sprite_index=sPlayer1Climb;
+			image_speed=1;
+		}
+		show_debug_message("is_climbing=="+string(is_climbing))
 	}
 	else
 	{
@@ -210,9 +228,16 @@ if(hascontrol)
 	
 		}
 		else{
-			//is moving
-			image_speed=2;
-			sprite_index=sPlayerR;
+			if(is_injured==false){
+				
+				image_speed=2;
+				sprite_index=sPlayerR;
+			}
+			else{
+				image_speed=0.5;
+				sprite_index=sPlayerR;
+			}
+			
 		}
 	
 	}

@@ -7,6 +7,6 @@
 //grv=0.7;
 //wsp=7;
 inventory=array_create(50,-1);
-
-
+is_injured=false;
+is_climbing=false;
 
