@@ -32,8 +32,9 @@ if (menu_x > gui_width + 150 && (menu_committed != -1))
 			{
 				file_delete("checkpoint.ini")
 			}
-			SlideTransition(TRANS_MODE.GOTO, L1_tutorialRoom); 
-			break;		
+			SlideTransition(TRANS_MODE.GOTO, L1_tutorialRoom);
+			break;
+
 		}
 		case 0: game_end(); break;
 	}
